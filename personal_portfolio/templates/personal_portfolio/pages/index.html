@@ -1,0 +1,26 @@
+{% load static %}
+{% include 'personal_portfolio/partials/head.html' %}
+
+<body>
+
+
+    <div class="wrapper">
+        <main>
+            {% include 'personal_portfolio/partials/initialmatrix.html' %}
+            {% include 'personal_portfolio/partials/apresentation.html' %}
+            {% include 'personal_portfolio/partials/skills.html' %}
+            {% include 'personal_portfolio/partials/projects.html' %}
+        </main>
+    </div>
+</body>
+<script type="text/javascript" src="matrix-effect.js"></script>
+<script type="text/javascript" src="text-animation.js"></script>
+
+<script>
+    $(".option").click(function () {
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+    });
+</script>
+
+</html>
